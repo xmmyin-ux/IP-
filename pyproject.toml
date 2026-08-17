@@ -1,0 +1,8 @@
+[project]
+name = "ip-industry-digest"
+version = "0.1.0"
+requires-python = ">=3.9"
+description = "个人 IP 行业每日快报"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
