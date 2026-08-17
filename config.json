@@ -1,0 +1,20 @@
+{
+  "timezone": "Asia/Shanghai",
+  "window_hours": 24,
+  "max_items_per_section": 12,
+  "regional_target": {"china": 10, "overseas": 2},
+  "watchlist": [],
+  "event_keywords": ["政策", "监管", "融资", "并购", "上线", "数据", "版权", "改编", "合作", "获奖", "下架", "发布", "investment", "funding", "launch", "policy", "acquisition", "adaptation"],
+  "sources": [
+    {"id":"cn-webnovel","name":"中国网文","category":"网文","region":"china","weight":30,"url":"https://news.google.com/rss/search?q=%E7%BD%91%E7%BB%9C%E6%96%87%E5%AD%A6%20OR%20%E7%BD%91%E6%96%87%20OR%20%E9%98%85%E6%96%87&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"},
+    {"id":"cn-shortdrama","name":"中国短剧","category":"短剧","region":"china","weight":30,"url":"https://news.google.com/rss/search?q=%E7%9F%AD%E5%89%A7%20OR%20%E5%BE%AE%E7%9F%AD%E5%89%A7&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"},
+    {"id":"cn-animation","name":"中国漫剧","category":"漫剧","region":"china","weight":30,"url":"https://news.google.com/rss/search?q=%E6%BC%AB%E5%89%A7%20OR%20%E5%8A%A8%E6%BC%AB%E7%9F%AD%E5%89%A7&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"},
+    {"id":"cn-fmv","name":"中国影游","category":"影游","region":"china","weight":30,"url":"https://news.google.com/rss/search?q=%E5%BD%B1%E6%B8%B8%20OR%20%E4%BA%92%E5%8A%A8%E5%BD%B1%E5%83%8F%20OR%20%E6%B8%B8%E6%88%8F%E6%94%B9%E7%BC%96&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"},
+    {"id":"cn-aigc","name":"中国 AIGC","category":"AIGC","region":"china","weight":30,"url":"https://news.google.com/rss/search?q=AIGC%20OR%20%E7%94%9F%E6%88%90%E5%BC%8F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"},
+    {"id":"global-webnovel","name":"Global web fiction","category":"网文","region":"overseas","weight":20,"url":"https://news.google.com/rss/search?q=web+novel+OR+web+fiction&hl=en-US&gl=US&ceid=US:en"},
+    {"id":"global-shortdrama","name":"Global short drama","category":"短剧","region":"overseas","weight":20,"url":"https://news.google.com/rss/search?q=vertical+drama+OR+short+drama&hl=en-US&gl=US&ceid=US:en"},
+    {"id":"global-animation","name":"Global animation","category":"漫剧","region":"overseas","weight":20,"url":"https://news.google.com/rss/search?q=webtoon+OR+animation+industry&hl=en-US&gl=US&ceid=US:en"},
+    {"id":"global-fmv","name":"Global interactive media","category":"影游","region":"overseas","weight":20,"url":"https://news.google.com/rss/search?q=FMV+game+OR+interactive+movie&hl=en-US&gl=US&ceid=US:en"},
+    {"id":"global-aigc","name":"Global generative AI","category":"AIGC","region":"overseas","weight":20,"url":"https://news.google.com/rss/search?q=generative+AI&hl=en-US&gl=US&ceid=US:en"}
+  ]
+}
