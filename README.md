@@ -13,7 +13,7 @@ python3 -m unittest discover -s tests
 
 ## 配置
 
-`config.json` 管理 RSS 信源、栏目、地区配额、事件关键词和重点关注清单。第一版不使用 AI、不保存原文全文。
+`config.json` 管理 RSS 信源、栏目、地区配额、事件关键词和重点关注清单。`social_watchlist.json` 管理 100 个公众号和小红书白名单的站内检索入口，默认不抓取其内容。第一版不使用 AI、不保存原文全文。
 
 ## 搜索记录
 
