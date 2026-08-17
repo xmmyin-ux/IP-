@@ -20,6 +20,17 @@ class Item:
 def load_config(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
+def load_watchlist(path: Path) -> list[dict]:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    items = data.get("items")
+    if not isinstance(items, list):
+        raise ValueError("社媒白名单缺少 items 列表")
+    required = {"id", "platform", "name", "category", "type", "focus", "search_term", "search_url", "enabled"}
+    for item in items:
+        if not isinstance(item, dict) or not required <= item.keys() or not item["search_url"].startswith("https://") or not isinstance(item["enabled"], bool):
+            raise ValueError("社媒白名单存在不完整条目")
+    return items
+
 def clean_text(value: str) -> str:
     return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", html.unescape(value or ""))).strip()
 
